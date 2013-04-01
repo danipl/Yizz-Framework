@@ -1,0 +1,3 @@
+ERROR_SERVER =  Se ha producido un error, revise el log de errores
+ERROR_ROL = No tiene los permisos necesarios para acceder a este recurso
+ERROR_PAGE = El recurso solicitado no existe

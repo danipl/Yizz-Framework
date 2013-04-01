@@ -1,0 +1,48 @@
+/* 
+    Document   : project
+    Created on : 17-oct-2012, 7:09:51
+    Author     : Yizz Technologies
+    Description:
+        Default project style.
+*/
+
+body{
+    font-size: 16px;
+    word-break: break-all;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Play';
+}
+
+header #logo{
+    background: url('../images/logo.png') 0% 50% no-repeat;
+    margin: 0 auto;
+    max-width: 450px;
+    padding-left: 80px;
+}
+
+header #logo h1{
+    font-size: 310%;
+    line-height: 80px;
+}
+
+section{
+    padding-left: 10%;
+}
+
+section h2{
+    font-family: 'Audiowide';
+}
+
+section.center ul li{
+    text-align: justify;
+}
+
+footer p{
+    font-size: 60%;
+    margin: 0 auto;
+    min-width: 300px;
+    text-align: center;
+    width: 50%;
+}

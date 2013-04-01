@@ -1,0 +1,9 @@
+#mod Rewrite
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /yizzframework/wwwroot
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /yizzframework/wwwroot/index.php [L]
+</IfModule>

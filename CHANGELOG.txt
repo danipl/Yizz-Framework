@@ -1,0 +1,165 @@
+###### Daniel Pardo Ligorred #########################################
+######################################################################
+######################################################################
+######	 		 D FRAMEWORK DEVELOPMENT CHANGELOG	######
+######################################################################
+######################################################################
+
+15-02-2011
+* Change log empezado.
+* Reconstruida estructura del proyecto para implementar seguridad MVC.
+* Modificada funcion Utiles@getURLRecurso con parámetro path por defecto a '.'.
+
+14-08-2011
+* Modificado index.php.
+* Modificado el contrusctor de la clase Controller.
+* Agregado LICENSE.txt.
+* Traducción parcial a ingles de directorios, clases y funciones.
+
+15-08-2011
+* Creada clase abstracta base D para ser extendida por el resto de clases.
+	* Modificadas el resto de clases para extender D. 
+* Mejorado el sistema de carga de paginas, unificados loadView y loadAjax en el constructor de Controller.
+* Utils.class.php ha dejado de ser una clase y ha sido reemplazada por /utils/functions.php.
+* Modificada función Controler@getResource para una mayor optimización.
+* Traducción parcial a ingles de directorios, clases y funciones.
+* Añadidas las siguientes funciones:
+	* __microtimeFloat.
+	* __generateID
+	* __formatPrice2Dec
+	* __secureData
+	
+16-08-2011
+* Creadas paginas para agregar distintos scripts con funcionalidades en el comienzo y el final de cada ejecución.
+	* start_script.php
+	* end_script.php
+* Agregada funcion de caching.
+	* cache_start.php
+	* cache_end.php
+* Modificada capa de persistencia.
+	* BBDD.class.php ha sido renombrada a BasicResource.class.php
+	* Se ha agregado un sistema mas robusto de persistencia, SimpleResource.class.php
+	
+21-08-2011
+* Se ha creado la variable global __APP_DIR__ para tratar mejor las rutas relativas.
+* Se ha modificado SimpleResource.class.php para una mejor integración con el framework.
+	* Se ha creado una carpeta "providers" para almacenar los diferentes providers de SimpleResource.
+* Se ha modificado la clase I18N para guardar la variable __CURRENT_LANGUAGE__,
+* Se ha implementado un sistema de Logging a través de la clase Logger.
+
+24-08-2011
+* Se han introducido Excepciones para el manejo de errores.
+	* Se ha creado MagicException como clase de manejo de Excepciones.
+	* Se han añadido Excepciones a las diferentes clases.
+	* Se ha agregado una script a DScripts.js para la alerta de errores.
+* Agregado sistema de templates.
+	* Renombrada carpeta views a templates.
+	* Creada la carpeta del template "default".
+	* Agregada función loadTemplate@Controller.class.php.
+* Modificado el sistema de cache.
+	* Ahora es compatible con llamadas AJAX y llamadas a través del método POST.
+	* Se han agregado dos sistemas mas de evaluación para el caching.
+		* Por parámetro.
+		* Por valor en dispatcher.
+		
+25-08-2011
+* Creada funcion __getFile para obtener un recurso a través de PHP.
+
+10-09-2011
+* Creada clase Filter para la comprobación/validación de datos/parámetros.
+
+11-09-2011
+* Añadida la clase Registry para patrón Registro.
+
+14-09-2011
+* Añadida clase Template para el motor de plantillas.
+* Se ha creado la variable global __TEMPLATE_ENGINE__ para activar el motor de plantillas.
+
+18-09-2011
+* Añadida la librería Dwoo como motor de plantillas.
+	* Extensión .php para vistas sin motor de plantillas.
+	* Extensión .tpl.php para vistas con motor de plantillas.
+* Modificados las variables globales en Controller por patrón Registry.
+* Añadidas variables de directorio.
+
+27-09-2011
+* Eliminada clase Dwoo para motor de plantillas y todas sus dependencias en el Framework.
+
+01-10-2011
+* Eliminada clase BasicResource.
+
+09-10-2011
+* Creada funcion __autoload para la carga dinámica y automática de clases.
+* Modificado todo el sistema de clases, las clases pasan a tener todos sus métodos y
+  sus atributos estáticos.
+
+16-10-2011
+* Renombrada la clase SimpleResource a DataSource.
+	* Modificado método prepare para ser compatible $params con diversos tipos de datos.
+	* Agregado método close@DataSource.
+	* Agregado método isOk@DataSource.
+	
+27-10-2011
+* Creada clase Image.class.php para la manipulación de imágenes.
+
+02-11-2011
+* Creada clase Shop.class.php para la implantación de carrito de la compra.
+* Creado método isEmpty@Filter.
+* Creadas variables de directorio.
+
+08-11-2011
+* Modificada la estructura de archivos, agregada carpeta kernel.
+* Agregada función __pagination al repertorio de funciones.
+* Agregada función __aZList al repertorio de funciones.
+
+11*11*2011
+* Agregada función __validateField al repertorio de funciones.
+* Agregada función __checkNullValue al repertorio de funciones.
+* Agregada función __checkSetValue al repertorio de funciones.
+
+17-11-2011
+* Realizados cambios en Controller.
+	* Modificado método exec@Controller.
+	* Modificado método loadView@Controller.
+	* Agregado método setNextView@Controller.
+	* Agregado método callPage@Controller.
+	* Agregado método goPage@Controller
+	* Agregado método includePage@Controller
+
+23-11-2011
+* Creado dispatcher.dtd.
+* Modificada la extensión para los diferentes lenguajes de .php a .lang.
+
+30-11-2011
+* Añadido server_error como pagina de errores.
+
+28-12-2011
+* Agregado gestión de buffer en Controller.
+* Añadido método clearBuffer@Controller.
+* Añadido método translateTable@I18n.
+
+29-12-2011
+* Añadida clase Mail.class.php dependiente de PHPMailer.
+* Añadido método isStringBetween@Filter.
+
+01-01-2012
+* Creada la clase URL.
+	* Añadido método encodeFriendlyURL@URL.
+	* Añadido método decodeFriendlyURL@URL.
+* Añadida la función getLastId a DatabaseProvider y DataSource.
+
+02-01-2012
+* Eliminado método decodeFriendlyURL@URL.
+* Añadido método isAjax@URL.
+* Eliminado método isAjax@Controller. 
+
+03-01-2012
+* Añadida funcionalidad para AJAX.
+	* Modificado método loadView@Controller. 
+	
+22-01-2012
+* Añadido sistema de modulos
+	* Creada clase Module.
+	* Creada carpeta modules.
+	* Creado module-dispatcher.dtd.
+	* Modificado el metodo exec@Controller.

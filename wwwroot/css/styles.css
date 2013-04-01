@@ -1,0 +1,22 @@
+/* 
+    Document   : yizztech-template
+    Created on : 11-oct-2012, 12:53:56
+    Author     : Yizz Technologies
+    Description:
+        Import styles.
+*/
+@import"bootstrap.min.css";
+@import"bootstrap-responsive.min.css";
+@import"yizztech-template.css";
+@import"default.css";
+/* MEDIA QUERIES */
+/* Large desktop */
+@import"media-queries/large-1200min.css" screen and (min-width: 1200px);
+/* Default */
+@import"media-queries/default-980min.css" screen and (min-width: 980px);
+/* Portrait tablet to landscape and desktop */
+@import"media-queries/tablet-768min979max.css" screen and (min-width: 768px) and (max-width: 979px);
+/* Landscape phone to portrait tablet */
+@import"media-queries/phone-767max.css" screen and (max-width: 767px);
+/* Landscape phones and down */
+@import"media-queries/phonedown-480max.css" screen and (max-width: 480px);

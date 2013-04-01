@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: 
+Disallow: /css/
+Disallow: /js/
+Disallow: /languages/
+Disallow: /tiny_mce/
+Sitemap: http://www.your_domain.com/sitemap.xml

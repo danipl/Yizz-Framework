@@ -1,0 +1,32 @@
+/* 
+    Document   : phonedown-480max
+    Created on : 17-oct-2012, 7:08:14
+    Author     : Yizz Technologies
+    Description:
+        Media queries to phone landscape and down resolution.
+*/
+
+header #logo{
+    background: url('../../images/logo.png') 50% 0% no-repeat;
+    padding-left: 0;
+    padding-top: 80px;
+}
+
+header #logo h1{
+    font-size: 200%;
+    text-align: center;
+    line-height: 32px;
+    overflow: hidden;
+}
+
+section h2{
+    font-size: 150%;
+}
+
+section h3{
+    font-size: 100%;
+}
+
+section ul{
+    font-size: 75%;
+}

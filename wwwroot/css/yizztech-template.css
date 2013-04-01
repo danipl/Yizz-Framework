@@ -1,0 +1,100 @@
+/* 
+    Document   : yizztech-template
+    Created on : 11-oct-2012, 12:53:56
+    Author     : Yizz Technologies
+    Description:
+        Default styles.
+*/
+
+/*
+* GENERAL
+*/
+body{
+    font-size: 16px;
+}
+
+
+/*
+* ALINEACIONES, MARGENES INTERIORES Y EXTERIORES
+*/
+.margin10{
+    margin: 10px;
+}
+
+.marginleft10{
+    margin-left: 10px;
+}
+
+.marginrigth10{
+    margin-right: 10px;
+}
+
+.margintop10{
+    margin-top: 10px;
+}
+
+.marginbottom10{
+    margin-bottom: 10px;
+}
+
+.margin20{
+    margin: 20px;
+}
+
+.marginleft20{
+    margin-left: 20px;
+}
+
+.marginrigth20{
+    margin-right: 20px;
+}
+
+.margintop20{
+    margin-top: 20px;
+}
+
+.marginbottom20{
+    margin-bottom: 20px;
+}
+
+.margin30{
+    margin: 30px;
+}
+
+.marginleft30{
+    margin-left: 30px;
+}
+
+.marginrigth30{
+    margin-right: 30px;
+}
+
+.margintop30{
+    margin-top: 30px;
+}
+
+.marginbottom30{
+    margin-bottom: 30px;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.center{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*
+* ESTILOS
+*/
+.bordershadow{
+    background: #fcfcfc;
+    border: 1px;
+    border-color: #d8d9da;
+    border-radius: 5px;
+    border-style: solid;
+    box-shadow: 1px 1px 10px 1px #d8d9da;
+    margin-bottom: 10px;
+}

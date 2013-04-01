@@ -1,0 +1,3 @@
+ERROR_SERVER =  English Se ha producido un error, revise el log de errores
+ERROR_ROL = English No tiene los permisos necesarios para acceder a este recurso
+ERROR_PAGE = English El recurso solicitado no existe
